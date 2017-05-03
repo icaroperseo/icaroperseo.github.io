@@ -3,7 +3,7 @@ Dash docsets con Dashing
 ########################
 
 :date: 2017-01-18 12:05:46
-:modified: 2016-05-02 09:35
+:modified: 2016-05-03 03:02
 :tags: How to, Docset, Dash
 :category: GNU/Linux
 :slug: dash-docsets-con-dashing

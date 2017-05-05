@@ -95,7 +95,10 @@ PLUGINS = [
            'related_posts',
            'series',
            'tag_cloud',
-           'sitemap'
+           'sitemap',
+           'filetime_from_git',
+           'deadlinks',
+           'pelican_gist'
 ]
 
 LOAD_CONTENT_CACHE = False
@@ -130,3 +133,11 @@ DIRECT_TEMPLATES = (
 
 # tag_cloud plugin settings
 TAG_CLOUD_STEPS = 3
+
+# deadlinks plugin settings
+DEADLINK_VALIDATION = True
+
+DEADLINK_OPTS = {
+    'archive':  True,
+    'labels':   True
+}

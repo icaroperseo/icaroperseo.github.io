@@ -119,9 +119,4 @@ DIRECT_TEMPLATES = (
 TAG_CLOUD_STEPS = 3
 
 # deadlinks plugin settings
-DEADLINK_VALIDATION = True
-
-DEADLINK_OPTS = {
-    'archive':  True,
-    'labels':   True
-}
+DEADLINK_VALIDATION = False

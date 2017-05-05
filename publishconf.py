@@ -44,3 +44,11 @@ DISQUS_DISPLAY_COUNTS = True
 # Addthis settings
 ADDTHIS_PROFILE = 'ra-59098737798345e6'
 ADDTHIS_DATA_TRACK_ADDRESSBAR = False
+
+# deadlinks plugin settings
+DEADLINK_VALIDATION = True
+
+DEADLINK_OPTS = {
+    'archive':  True,
+    'labels':   True
+}

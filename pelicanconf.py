@@ -13,8 +13,8 @@ TIMEZONE = 'America/Mexico_City'
 DEFAULT_LANG = 'es'
 
 # Feed generation is usually not desired when developing
-FEED_DOMAIN = 'https://icaroperseo.github.io'
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
+# FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
@@ -33,22 +33,6 @@ SOCIAL = (
 )
 
 DEFAULT_PAGINATION = 10
-
-# Analytic settings
-GOOGLE_ANALYTICS = 'UA-98215672-1'
-GOOGLE_SITE_VERIFICATION = 'RhB2VdLzwEON-lx2UrogGDwcwqqASJ59IQpwU5w1iQ8'
-PIWIK_URL = 'piwik-perseosblog.rhcloud.com'
-PIWIK_SSL_URL = 'piwik-perseosblog.rhcloud.com'
-PIWIK_SITE_ID = 1
-
-# Comment settings
-DISQUS_SITENAME = 'dual-temptation'
-DISQUS_NO_ID = True
-DISQUS_DISPLAY_COUNTS = True
-
-# Addthis settings
-ADDTHIS_PROFILE = 'ra-59098737798345e6'
-ADDTHIS_DATA_TRACK_ADDRESSBAR = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

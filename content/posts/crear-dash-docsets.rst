@@ -59,7 +59,7 @@ En *Arch Linux* y derivadas es posible su instalación desde `AUR <https://aur.a
 
 .. class:: well
 
-    :label-info:`Información:` Para otras distribuciones GNU/Linux es posible su instalación al recurrir al *Makefile* que se encuentra en el repositorio. Los usuarios de *OS X* pueden recurrir a algún `binario precompilado <https://github.com/technosophos/dashing/release>`__ ofrecido oficialmente en el repositorio oficial del proyecto.
+    :label-info:`Información:` Para otras distribuciones GNU/Linux es posible su instalación al recurrir al *Makefile* que se encuentra en el repositorio. Los usuarios de *OS X* pueden recurrir a algún `binario precompilado <https://github.com/technosophos/dashing/releases>`__ ofrecido oficialmente en el repositorio oficial del proyecto.
 
 Ejemplo práctico: Creación de Spacemacs.docset
 ==============================================

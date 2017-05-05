@@ -2,6 +2,7 @@
 Dash docsets con Dashing
 ########################
 
+:lang: es
 :tags: How to, Docset, Dash
 :category: GNU/Linux
 :slug: dash-docsets-con-dashing

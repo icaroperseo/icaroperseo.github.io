@@ -2,6 +2,7 @@
 Contenedores cifrados en GNU/Linux
 ##################################
 
+:lang: es
 :tags: How to, Privacidad, Contenedores
 :category: GNU/Linux
 :slug: contenedores-cifrados-en-gnu-linux

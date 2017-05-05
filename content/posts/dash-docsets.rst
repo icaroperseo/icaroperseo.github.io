@@ -1,6 +1,5 @@
-########################
 Dash docsets con Dashing
-########################
+========================
 
 :lang: es
 :tags: How to, Docset, Dash
@@ -9,10 +8,6 @@ Dash docsets con Dashing
 :authors: Icaro Perseo
 :summary: Son muchas las razones por las que resulta necesario disponer de cierta documentación sin depender de una conexión a la web, ya sea porque bajo ciertas limitaciones y circunstancias el acceso a la red resulta inviable o bien por simples cuestiones prácticas.
 
-.. ----------------------------------------------------------------------------
-.. role:: kbd
-.. ----------------------------------------------------------------------------
-
 .. image:: images/dash-logo.jpeg
     :alt: Logotipo Dash
     :align: center
@@ -20,25 +15,23 @@ Dash docsets con Dashing
 
 Son muchas las razones por las que resulta necesario disponer de cierta documentación sin depender de una conexión a la web, ya sea porque bajo ciertas limitaciones y circunstancias el acceso a la red resulta inviable o bien por simples cuestiones prácticas. Pero lo que no podemos negar es que todos sentimos cierto grado de frustración cuando vemos imposible el acceso a dicho recurso, el cual forma parte integral de la actividad que estamos o pretendemos desempeñar. Con el panorama anterior en mente, a continuación describiré una posible solución a esta problemática.
 
-****
 Dash
-****
+----
 
 `Kapeli's Dash <https://kapeli.com/dash>`__, o sencillamente *Dash*, es una :abbr:`API (Interfaz de programación de aplicaciones.)`, navegador de documentación y gestor de fragmentos de código o "snippets", el cual cuenta con más de 150 conjuntos de documentación "offline" o mejor conocidos cómo `Dash docsets <https://kapeli.com/dash#docsets>`__ mismos que, en su mayoría, pueden descargarse libremente. Aunado a lo anterior, también existe la posibilidad de crear *docsets* personalizados, ya sea para nuestro uso personal o bien para compartirlos con otros.
 
 Cabe destacar que a pesar de que *Dash* solo se encuentra disponible para dispositivos *Apple* es posible utilizar los *docsets* que ofrece por medio de algunas aplicaciones alternativas que disponen de soporte para diversas plataformas y sistemas operativos.
 
 Dash docsets
-============
+~~~~~~~~~~~~
 
 Un *Dash docset* o simplemente *docset* es, básicamente, un directorio que lleva por descripción el nombre de la documentación o referencia, seguido por el prefijo *.docset*, a modo de extensión. El directorio alberga en su interior los siguientes elementos:
 
 -  *Archivos de documentación —archivos de imagen o multimedia, HTML, JavaScript y CSS—*: Todos ellos conforman la documentación a tratar.
 -  *Una base de datos SQLite*: La cual cumple la función de indexar los archivos de documentación y su contenido, mismo que se encuentra clasificado de forma especifica por la o las personas responsables de la creación del *docset*.
 
-************************************
 Creación de Dash docsets con Dashing
-************************************
+------------------------------------
 
 `Dashing <https://github.com/technosophos/dashing>`__ es una aplicación mutiplataforma y de propósito general, escrita en lenguaje *GO*, que facilita la elaboración de *docsets* a partir de documentos en formato HTML, empleando para ello el uso de selectores *CSS3* para clasificar su contenido, además de ofrecer las siguientes características:
 
@@ -63,7 +56,7 @@ En *Arch Linux* y derivadas es posible su instalación desde `AUR <https://aur.a
     :label-info:`Información:` Para otras distribuciones GNU/Linux es posible su instalación al recurrir al *Makefile* que se encuentra en el repositorio. Los usuarios de *OS X* pueden recurrir a algún `binario precompilado <https://github.com/technosophos/dashing/releases>`__ ofrecido oficialmente en el repositorio oficial del proyecto.
 
 Ejemplo práctico: Creación de Spacemacs.docset
-==============================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Antes de comenzar, resulta indispensable contar con los archivos de documentación cómo primer paso, para ello tendremos que recurrir a la utilización de un "web crawler". En este tutorial recurriré a `HTTraQt <http://httraqt.sourceforge.net/>`__, un "front-end" de `HTTrack <http://www.httrack.com/>`__, para descargar los archivos HTML desde la `documentación oficial de Spacemacs <http://spacemacs.org/doc/QUICK_START.html>`__, sin embargo, la elección de la utilidad a emplear es a título personal, siéntase libre de elegir otra alternativa si así lo prefiere.
 
@@ -169,9 +162,8 @@ Cómo último paso, se procede a la creación del *docset*:
 
 En este punto se debería obtener como resultado la creación del directorio *Spacemacs.docset* —ubicado dentro del directorio de trabajo—, el cual contiene todos los archivos requeridos por *Dash*.
 
-*************************************
 Utilizar Zeal cómo alternativa a Dash
-*************************************
+-------------------------------------
 
 .. image:: images/zeal-logo.jpeg
     :alt: Zeal logo

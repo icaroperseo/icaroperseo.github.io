@@ -1,6 +1,5 @@
-##################################
 Contenedores cifrados en GNU/Linux
-##################################
+==================================
 
 :lang: es
 :tags: How to, Privacidad, Contenedores
@@ -22,9 +21,8 @@ Contenedores cifrados en GNU/Linux
 
 Este *script* crea archivos contenedores a partir de un nombre y tamaño dado para posteriormente asignarle de forma automática la extensión ``.ct``. Durante el proceso de creación del contenedor se le pedirá al usuario introducir la contraseña de *root* y una **frase contraseña**, la cual será solicitada cada vez que se desee acceder al contenido del archivo. Una vez creado el archivo contenedor es posible realizar diversos tipos de operaciones, mismas que se detallan a continuación.
 
-***************
 Funcionalidades
-***************
+---------------
 
 -  ``n`` \| ``new`` \| ``create``: crea un nuevo archivo contenedor, dependiendo del tamaño que se le haya designado. Es importante señalar que el tamaño de los archivos contenedores cambia de forma dinámica durante su vida útil, es decir que no se reserva de forma predeterminada la totalidad del espacio asignado para el archivo contenedor, optimizando o modificando su tamaño en relación de su propio contenido sin exceder, en ningún momento, el limite establecido. Si este característica le resulta indeseable, es posible modificar su comportamiento para que realice lo contrario, para ello tendrá que recurrir a la documentación oficial.
 -  ``d`` \| ``del`` \| ``delete``: elimina, de forma permanente, un archivo contenedor al igual que su directorio temporal.
@@ -34,10 +32,10 @@ Funcionalidades
 -  ``h`` \| ``help`` \| ``-h`` \| ``--help``: muestra un breve resumen sobre cómo utilizar *ctmg*.
 
 Ejemplos de uso
-===============
+~~~~~~~~~~~~~~~
 
 Crear un nuevo contenedor
--------------------------
+"""""""""""""""""""""""""
 
 .. code-block:: bash
 
@@ -49,7 +47,7 @@ Donde:
 -  ``100MiB``: tamaño designado para el nuevo contenedor, 100 megabytes en este caso.
 
 Abrir un archivo contenedor
----------------------------
+"""""""""""""""""""""""""""
 
 .. code-block:: bash
 
@@ -60,7 +58,7 @@ Abrir un archivo contenedor
     :label-info:`Información:` Una vez abierto el archivo es posible copiar, mover, crear o manipular archivos y directorios en su interior durante el periodo de tiempo que permanezca montado dicho contenedor.
 
 Cerrar un archivo contenedor
-----------------------------
+""""""""""""""""""""""""""""
 
 .. code-block:: bash
 
@@ -70,9 +68,8 @@ Cerrar un archivo contenedor
 
     :label-info:`Información:` Recurra a la página oficial del proyecto para mayor información, ejecute: :kbd:`ctmg h` o bien: :kbd:`man ctmg` para aquellas distribuciones derivadas de *Arch Linux*, incluyendo a esta última.
 
-***********
 Instalación
-***********
+-----------
 
 Es posible encontrar un paquete de instalación para *Arch Linux* y derivadas al recurrir al repositorio *AUR*, por ejemplo:
 
@@ -92,17 +89,15 @@ Para el resto de distribuciones GNU/Linux resulta necesario instalar las equival
 
     make install
 
-**********************
 Consideraciones de uso
-**********************
+----------------------
 
 -  Resulta imperativo el poder acceder al sistema como superusuario.
 -  *ctmg* es útil para mantener la privacidad de la información más no garantiza la autenticidad de la misma. Si alguna persona manipula de forma intencional el archivo *.ct* es muy posible que resulte comprometida la integridad y/o veracidad de los datos almacenados en el interior del contenedor.
 -  Actualmente solo es posible utilizar *ctmg* en sistemas *Linux-like*.
 
-*******************
 Alternativas a ctmg
-*******************
+-------------------
 
 -  `Tomb <https://www.dyne.org/software/tomb/>`__
 -  `VeraCrypt <https://veracrypt.codeplex.com/>`__

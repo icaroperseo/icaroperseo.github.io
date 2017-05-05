@@ -21,7 +21,7 @@
         <meta property="og:title" content="Dash docsets con Dashing"/>
         <meta property="og:url" content="https://icaroperseo.github.io/dash-docsets-con-dashing.html"/>
         <meta property="og:description" content="Son muchas las razones por las que resulta necesario disponer de cierta documentación sin depender de una conexión a la web, ya sea porque bajo ciertas limitaciones y circunstancias el acceso a la red resulta inviable o bien por simples cuestiones prácticas."/>
-        <meta property="article:published_time" content="2017-01-18" />
+        <meta property="article:published_time" content="2017-05-03" />
             <meta property="article:section" content="GNU/Linux" />
             <meta property="article:tag" content="How to" />
             <meta property="article:tag" content="Docset" />
@@ -108,11 +108,11 @@
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-01-18T12:05:46-06:00"> mié 18 enero 2017</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-05-03T02:55:55-05:00"> mié 03 mayo 2017</time>
     </span>
           <span class="label label-default">Modified</span>
             <span class="modified">
-                <i class="fa fa-calendar"></i><time datetime="2016-05-03T03:02:00-05:00"> mar 03 mayo 2016</time>
+                <i class="fa fa-calendar"></i><time datetime="2017-05-04T21:44:41-05:00"> jue 04 mayo 2017</time>
             </span>
 
 
@@ -130,11 +130,11 @@
                 </div>
                 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-<img alt="Logotipo Dash" class="img-thumbnail align-center" src="images/dash-logo.jpeg" />
+<img alt="Logotipo Dash" class="img-thumbnail align-center" src="images/dash-logo.jpeg"/>
 <p>Son muchas las razones por las que resulta necesario disponer de cierta documentación sin depender de una conexión a la web, ya sea porque bajo ciertas limitaciones y circunstancias el acceso a la red resulta inviable o bien por simples cuestiones prácticas. Pero lo que no podemos negar es que todos sentimos cierto grado de frustración cuando vemos imposible el acceso a dicho recurso, el cual forma parte integral de la actividad que estamos o pretendemos desempeñar. Con el panorama anterior en mente, a continuación describiré una posible solución a esta problemática.</p>
 <div class="section" id="dash">
 <h2>Dash</h2>
-<p><a class="reference external" href="https://kapeli.com/dash">Kapeli's Dash</a>, o sencillamente <em>Dash</em>, es una <abbr title="Interfaz de programación de aplicaciones.">API</abbr>, navegador de documentación y gestor de fragmentos de código o &quot;snippets&quot;, el cual cuenta con más de 150 conjuntos de documentación &quot;offline&quot; o mejor conocidos cómo <a class="reference external" href="https://kapeli.com/dash#docsets">Dash docsets</a> mismos que, en su mayoría, pueden descargarse libremente. Aunado a lo anterior, también existe la posibilidad de crear <em>docsets</em> personalizados, ya sea para nuestro uso personal o bien para compartirlos con otros.</p>
+<p><a class="reference external" href="https://kapeli.com/dash">Kapeli's Dash</a>, o sencillamente <em>Dash</em>, es una <abbr title="Interfaz de programación de aplicaciones.">API</abbr>, navegador de documentación y gestor de fragmentos de código o "snippets", el cual cuenta con más de 150 conjuntos de documentación "offline" o mejor conocidos cómo <a class="reference external" href="https://kapeli.com/dash#docsets">Dash docsets</a> mismos que, en su mayoría, pueden descargarse libremente. Aunado a lo anterior, también existe la posibilidad de crear <em>docsets</em> personalizados, ya sea para nuestro uso personal o bien para compartirlos con otros.</p>
 <p>Cabe destacar que a pesar de que <em>Dash</em> solo se encuentra disponible para dispositivos <em>Apple</em> es posible utilizar los <em>docsets</em> que ofrece por medio de algunas aplicaciones alternativas que disponen de soporte para diversas plataformas y sistemas operativos.</p>
 <div class="section" id="dash-docsets">
 <h3>Dash docsets</h3>
@@ -159,11 +159,11 @@ regulares</a>.</li>
 <p>En <em>Arch Linux</em> y derivadas es posible su instalación desde <a class="reference external" href="https://aur.archlinux.org/packages/dashing/">AUR</a>:</p>
 <div class="highlight"><pre><span></span>yaourt -S dashing
 </pre></div>
-<p class="well"><span class="label label-info">Información:</span> Para otras distribuciones GNU/Linux es posible su instalación al recurrir al <em>Makefile</em> que se encuentra en el repositorio. Los usuarios de <em>OS X</em> pueden recurrir a algún <a class="reference external" href="https://github.com/technosophos/dashing/release">binario precompilado</a> ofrecido oficialmente en el repositorio oficial del proyecto.</p>
+<p class="well"><span class="label label-info">Información:</span> Para otras distribuciones GNU/Linux es posible su instalación al recurrir al <em>Makefile</em> que se encuentra en el repositorio. Los usuarios de <em>OS X</em> pueden recurrir a algún <a class="reference external" href="https://github.com/technosophos/dashing/releases">binario precompilado</a> ofrecido oficialmente en el repositorio oficial del proyecto.</p>
 <div class="section" id="ejemplo-practico-creacion-de-spacemacs-docset">
 <h3>Ejemplo práctico: Creación de Spacemacs.docset</h3>
-<p>Antes de comenzar, resulta indispensable contar con los archivos de documentación cómo primer paso, para ello tendremos que recurrir a la utilización de un &quot;web crawler&quot;. En este tutorial recurriré a <a class="reference external" href="http://httraqt.sourceforge.net/">HTTraQt</a>, un &quot;front-end&quot; de <a class="reference external" href="http://www.httrack.com/">HTTrack</a>, para descargar los archivos HTML desde la <a class="reference external" href="http://spacemacs.org/doc/QUICK_START.html">documentación oficial de Spacemacs</a>, sin embargo, la elección de la utilidad a emplear es a título personal, siéntase libre de elegir otra alternativa si así lo prefiere.</p>
-<p class="well"><span class="label label-info">Información:</span> HTTrack es una aplicación —<a class="reference external" href="https://es.wikipedia.org/wiki/Ara%C3%B1a_web">araña web</a> o &quot;web crawler&quot;— cuya finalidad es la de descargar páginas en formato HTML para su consulta sin conexión. Cuenta con versiones para GNU/Linux, Microsoft Windows y Android.</p>
+<p>Antes de comenzar, resulta indispensable contar con los archivos de documentación cómo primer paso, para ello tendremos que recurrir a la utilización de un "web crawler". En este tutorial recurriré a <a class="reference external" href="http://httraqt.sourceforge.net/">HTTraQt</a>, un "front-end" de <a class="reference external" href="http://www.httrack.com/">HTTrack</a>, para descargar los archivos HTML desde la <a class="reference external" href="http://spacemacs.org/doc/QUICK_START.html">documentación oficial de Spacemacs</a>, sin embargo, la elección de la utilidad a emplear es a título personal, siéntase libre de elegir otra alternativa si así lo prefiere.</p>
+<p class="well"><span class="label label-info">Información:</span> HTTrack es una aplicación —<a class="reference external" href="https://es.wikipedia.org/wiki/Ara%C3%B1a_web">araña web</a> o "web crawler"— cuya finalidad es la de descargar páginas en formato HTML para su consulta sin conexión. Cuenta con versiones para GNU/Linux, Microsoft Windows y Android.</p>
 <p>Una vez superado el paso anterior, procedemos a situarnos en el directorio empleado por la araña web, mismo que pasaré a denominar como <tt class="docutils literal">&lt;directorio_de_trabajo&gt;</tt>, para posteriormente crear el archivo que nos permitirá establecer las características y funcionalidades que dispondrá el <em>docset</em>.</p>
 <p>Desde una terminal, introduzca lo siguiente:</p>
 <div class="highlight"><pre><span></span><span class="nb">cd</span> rm -rf <span class="o">{</span>external.html,index.html,backblue.gif,fade.gif,hts-log.txt,hts-cache<span class="o">}</span>
@@ -172,19 +172,19 @@ dashing init
 <p class="well"><span class="label label-warning">Nota:</span> La instrucción que aparece en la línea número 2 solo es aplicable si el lector se decantó por <em>HTTraQt/HTTrack</em>, la eliminación de dichos archivos y directorios resulta necesaria ya que estos son creados automáticamente por dicha aplicación y no resultan ser de utilidad al usuario final —se recomienda crear una copia del directorio original, a modo de respaldo, para que pueda ser empleado en futuras actualizaciones de la documentación—.</p>
 <p>El procedimiento descrito en la línea número 3 creará el archivo <em>dashing.json</em> cuyo contenido es el siguiente:</p>
 <div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Dashing&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="s2">&quot;dashing&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;index&quot;</span><span class="p">:</span> <span class="s2">&quot;index.html&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;selectors&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;dt a&quot;</span><span class="p">:</span> <span class="s2">&quot;Command&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Package&quot;</span>
+    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Dashing"</span><span class="p">,</span>
+    <span class="nt">"package"</span><span class="p">:</span> <span class="s2">"dashing"</span><span class="p">,</span>
+    <span class="nt">"index"</span><span class="p">:</span> <span class="s2">"index.html"</span><span class="p">,</span>
+    <span class="nt">"selectors"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"dt a"</span><span class="p">:</span> <span class="s2">"Command"</span><span class="p">,</span>
+        <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"Package"</span>
     <span class="p">},</span>
-    <span class="nt">&quot;ignore&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;ABOUT&quot;</span>
+    <span class="nt">"ignore"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">"ABOUT"</span>
     <span class="p">],</span>
-    <span class="nt">&quot;icon32x32&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;allowJS&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nt">&quot;ExternalURL&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="nt">"icon32x32"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
+    <span class="nt">"allowJS"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">"ExternalURL"</span><span class="p">:</span> <span class="s2">""</span>
 <span class="p">}</span>
 </pre></div>
 <p>La descripción de la notación del archivo es la siguiente:</p>
@@ -201,9 +201,9 @@ dashing init
 <div class="table-responsive">
 <table class="table-bordered table-striped table">
 <colgroup>
-<col width="38%" />
-<col width="12%" />
-<col width="50%" />
+<col width="38%"></col>
+<col width="12%"></col>
+<col width="50%"></col>
 </colgroup>
 <thead valign="bottom">
 <tr><th class="head">Selector</th>
@@ -238,19 +238,19 @@ dashing init
 <p class="well"><span class="label label-warning">Nota:</span> Para el procedimiento anterior es necesario analizar la estructura de los archivos de documentación —específicamente de los archivos HTML— con la intención de establecer algún tipo de relación entre los selectores que contiene y los tipos de datos ofrecidos por <em>Dash</em>. En algunas ocasiones estos últimos no contarán con una correspondencia bastante clara por lo que queda a criterio del responsable de la creación del <em>docset</em> escoger el tipo de dato más adecuado para tal fin.</p>
 <p>Una vez definidos los selectores correspondientes se procede a completar los parámetros faltantes. He aquí el contenido del archivo <em>dashing.json</em> después de haber sido actualizado:</p>
 <div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Spacemacs&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="s2">&quot;Spacemacs&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;index&quot;</span><span class="p">:</span> <span class="s2">&quot;spacemacs.org/doc/QUICK_START.html&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;selectors&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;div.outline-2 h2&quot;</span><span class="p">:</span> <span class="s2">&quot;Resource&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;div.outline-3 h3&quot;</span><span class="p">:</span> <span class="s2">&quot;Section&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;Type&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;div.org-src-container pre.src-sh&quot;</span><span class="p">:</span> <span class="s2">&quot;Command&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;div.org-src-container pre.src-emacs-lisp&quot;</span><span class="p">:</span> <span class="s2">&quot;Value&quot;</span>
+    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"Spacemacs"</span><span class="p">,</span>
+    <span class="nt">"package"</span><span class="p">:</span> <span class="s2">"Spacemacs"</span><span class="p">,</span>
+    <span class="nt">"index"</span><span class="p">:</span> <span class="s2">"spacemacs.org/doc/QUICK_START.html"</span><span class="p">,</span>
+    <span class="nt">"selectors"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">"div.outline-2 h2"</span><span class="p">:</span> <span class="s2">"Resource"</span><span class="p">,</span>
+        <span class="nt">"div.outline-3 h3"</span><span class="p">:</span> <span class="s2">"Section"</span><span class="p">,</span>
+        <span class="nt">"code"</span><span class="p">:</span> <span class="s2">"Type"</span><span class="p">,</span>
+        <span class="nt">"div.org-src-container pre.src-sh"</span><span class="p">:</span> <span class="s2">"Command"</span><span class="p">,</span>
+        <span class="nt">"div.org-src-container pre.src-emacs-lisp"</span><span class="p">:</span> <span class="s2">"Value"</span>
     <span class="p">},</span>
-    <span class="nt">&quot;icon32x32&quot;</span><span class="p">:</span> <span class="s2">&quot;spacemacs.png&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;allowJS&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nt">&quot;ExternalURL&quot;</span><span class="p">:</span> <span class="s2">&quot;http://spacemacs.org/doc/QUICK_START.html&quot;</span>
+    <span class="nt">"icon32x32"</span><span class="p">:</span> <span class="s2">"spacemacs.png"</span><span class="p">,</span>
+    <span class="nt">"allowJS"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">"ExternalURL"</span><span class="p">:</span> <span class="s2">"http://spacemacs.org/doc/QUICK_START.html"</span>
 <span class="p">}</span>
 </pre></div>
 <p>Cómo último paso, se procede a la creación del <em>docset</em>:</p>
@@ -261,7 +261,7 @@ dashing init
 </div>
 <div class="section" id="utilizar-zeal-como-alternativa-a-dash">
 <h2>Utilizar Zeal cómo alternativa a Dash</h2>
-<img alt="Zeal logo" class="img-thumbnail align-center" src="images/zeal-logo.jpeg" />
+<img alt="Zeal logo" class="img-thumbnail align-center" src="images/zeal-logo.jpeg"/>
 <p><a class="reference external" href="https://zealdocs.org/">Zeal</a> es un navegador de documentación sin conexión, desarrollado en <em>Qt5</em>, y completamente compatible con <em>Dash</em>, el cual se encuentra disponible para los siguientes sistemas operativos: <em>Microsoft Windows</em>, <em>GNU/Linux</em> y <em>BSD</em>, siendo posible su instalación en <em>Arch Linux</em> y derivadas a través de <em>pacman</em>:</p>
 <div class="highlight"><pre><span></span>sudo pacman -S zeal
 </pre></div>
@@ -274,7 +274,7 @@ cp -R /Spacemacs.docset ~/.local/share/Zeal/Zeal/docsets/
 <p class="well"><span class="label label-warning">Nota:</span> El procedimiento anterior sólo es aplicable en distribuciones <em>GNU/Linux</em>.</p>
 <p class="well"><span class="label label-info">Información:</span> Por favor consulte la documentación oficial o recurra al <a class="reference external" href="https://github.com/zealdocs/zeal">repositorio oficial de Zeal</a> para obtener asistencia en la ubicación de la ruta donde se almacenan los <em>docsets</em> para plataformas distintas a <em>GNU/Linux</em>.</p>
 <p>Por último, solo resta abrir <em>Zeal</em> para comprobar que se encuentra listado el <em>docset</em> para su consulta:</p>
-<img alt="Previsualización de la documentación oficial de Spacemacs en Zeal" class="img-thumbnail align-center" src="images/screenshots/spacemacs_docset-zeal.jpeg" />
+<img alt="Previsualización de la documentación oficial de Spacemacs en Zeal" class="img-thumbnail align-center" src="images/screenshots/spacemacs_docset-zeal.jpeg"/>
 <p class="well"><span class="label label-info">Información:</span> <em>Spacemacs.docset</em> se encuentra disponible para su descarga en el siguiente <a class="reference external" href="https://www.dropbox.com/s/fuczinjujlttfcj/Spacemacs.docset.tar.gz?dl=0">enlace</a>.</p>
 <div class="alert alert-warning">
 <strong>Feedback:</strong> ¿Conoce algún otro procedimiento que resuelva la problemática de disponer documentación sin conexión a la red? Si es así, no dude en compartir su solución en los comentarios.</div>
@@ -362,16 +362,16 @@ cp -R /Spacemacs.docset ~/.local/share/Zeal/Zeal/docsets/
       <a href="https://icaroperseo.github.io/tag/how-to.html">How to</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://icaroperseo.github.io/tag/contenedores.html">Contenedores</a>
-    </li>
-    <li class="list-group-item tag-3">
       <a href="https://icaroperseo.github.io/tag/docset.html">Docset</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://icaroperseo.github.io/tag/privacidad.html">Privacidad</a>
+      <a href="https://icaroperseo.github.io/tag/dash.html">Dash</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://icaroperseo.github.io/tag/dash.html">Dash</a>
+      <a href="https://icaroperseo.github.io/tag/contenedores.html">Contenedores</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://icaroperseo.github.io/tag/privacidad.html">Privacidad</a>
     </li>
   </ul>
 </li>
@@ -397,7 +397,7 @@ cp -R /Spacemacs.docset ~/.local/share/Zeal/Zeal/docsets/
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2016 Icaro Perseo
+         <div class="col-xs-10">&copy; 2017 Icaro Perseo
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>              <p><small>A menos que se indique lo contrario, todos los artículos se publican bajo la licencia <a href="https://www.gnu.org/licenses/#FDL">GNU FDL</a>.</small></p>

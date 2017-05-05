@@ -2,6 +2,7 @@
 404
 ###
 
+:gittime: off
 :status: hidden
 :save_as: 404.html
 

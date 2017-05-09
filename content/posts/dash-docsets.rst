@@ -307,7 +307,8 @@ Por último, solo resta abrir *Zeal* para comprobar que se encuentra listado el
 
 :label-info:`Información:`
 *Spacemacs.docset* se encuentra disponible para su descarga en el siguiente
-`enlace <https://www.dropbox.com/s/fuczinjujlttfcj/Spacemacs.docset.tar.gz?dl=0>`__.
+`enlace
+<https://www.dropbox.com/s/fuczinjujlttfcj/Spacemacs.docset.tar.gz?dl=0>`__.
 
 .. alert:: **Feedback:**
     ¿Conoce algún otro procedimiento que resuelva la problemática de disponer

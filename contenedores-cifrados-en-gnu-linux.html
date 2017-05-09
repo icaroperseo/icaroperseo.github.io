@@ -110,7 +110,7 @@
     </span>
           <span class="label label-default">Modified</span>
             <span class="modified">
-                <i class="fa fa-calendar"></i><time datetime="2017-05-04T21:44:41-05:00"> jue 04 mayo 2017</time>
+                <i class="fa fa-calendar"></i><time datetime="2017-05-08T23:45:49-05:00"> lun 08 mayo 2017</time>
             </span>
 
 
@@ -129,17 +129,40 @@
                 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <img alt="Logotipo pen drive USB" class="img-thumbnail align-center" src="images/lock_usb_pen_drive.jpeg"/>
-<p><a class="reference external" href="https://git.zx2c4.com/ctmg/about/">ctmg</a> es un gestor de archivos contenedores cifrados para sistemas GNU/Linux, escrito en el lenguaje de comandos <em>bash</em>, el cual hace uso exclusivamente de <a class="reference external" href="https://gitlab.com/cryptsetup/cryptsetup">cryptsetup</a> además de <a class="reference external" href="https://es.wikipedia.org/wiki/E2fsprogs">otras utilidades estándar del sistema de archivos</a>.</p>
-<p>Este <em>script</em> crea archivos contenedores a partir de un nombre y tamaño dado para posteriormente asignarle de forma automática la extensión <tt class="docutils literal">.ct</tt>. Durante el proceso de creación del contenedor se le pedirá al usuario introducir la contraseña de <em>root</em> y una <strong>frase contraseña</strong>, la cual será solicitada cada vez que se desee acceder al contenido del archivo. Una vez creado el archivo contenedor es posible realizar diversos tipos de operaciones, mismas que se detallan a continuación.</p>
+<p><a class="reference external" href="https://git.zx2c4.com/ctmg/about/">ctmg</a> es un gestor de archivos
+contenedores cifrados para sistemas GNU/Linux, escrito en el lenguaje de
+comandos <em>bash</em>, el cual hace uso exclusivamente de <a class="reference external" href="https://gitlab.com/cryptsetup/cryptsetup">cryptsetup</a> además de <a class="reference external" href="https://es.wikipedia.org/wiki/E2fsprogs">otras utilidades
+estándar del sistema de archivos</a>.</p>
+<p>Este <em>script</em> crea archivos contenedores a partir de un nombre y tamaño dado
+para posteriormente asignarle de forma automática la extensión <tt class="docutils literal">.ct</tt>. Durante
+el proceso de creación del contenedor se le pedirá al usuario introducir la
+contraseña de <em>root</em> y una <strong>frase contraseña</strong>, la cual será solicitada cada
+vez que se desee acceder al contenido del archivo. Una vez creado el archivo
+contenedor es posible realizar diversos tipos de operaciones, mismas que se
+detallan a continuación.</p>
 <div class="section" id="funcionalidades">
 <h2>Funcionalidades</h2>
 <ul class="simple">
-<li><tt class="docutils literal">n</tt> | <tt class="docutils literal">new</tt> | <tt class="docutils literal">create</tt>: crea un nuevo archivo contenedor, dependiendo del tamaño que se le haya designado. Es importante señalar que el tamaño de los archivos contenedores cambia de forma dinámica durante su vida útil, es decir que no se reserva de forma predeterminada la totalidad del espacio asignado para el archivo contenedor, optimizando o modificando su tamaño en relación de su propio contenido sin exceder, en ningún momento, el limite establecido. Si este característica le resulta indeseable, es posible modificar su comportamiento para que realice lo contrario, para ello tendrá que recurrir a la documentación oficial.</li>
-<li><tt class="docutils literal">d</tt> | <tt class="docutils literal">del</tt> | <tt class="docutils literal">delete</tt>: elimina, de forma permanente, un archivo contenedor al igual que su directorio temporal.</li>
-<li><tt class="docutils literal">o</tt> | <tt class="docutils literal">open</tt>: abre un archivo contenedor existente. Lo anterior creará un directorio temporal, con el mismo nombre del archivo contenedor, y copiará el contenido del archivo hacia este último.</li>
-<li><tt class="docutils literal">c</tt> | <tt class="docutils literal">close</tt>: cierra un contenedor. Esto eliminará el directorio temporal, su contenido será guardado dentro del archivo contenedor antes de realizar esta operación.</li>
+<li><tt class="docutils literal">n</tt> | <tt class="docutils literal">new</tt> | <tt class="docutils literal">create</tt>: crea un nuevo archivo contenedor, dependiendo
+del tamaño que se le haya designado. Es importante señalar que el tamaño de
+los archivos contenedores cambia de forma dinámica durante su vida útil, es
+decir que no se reserva de forma predeterminada la totalidad del espacio
+asignado para el archivo contenedor, optimizando o modificando su tamaño en
+relación de su propio contenido sin exceder, en ningún momento, el limite
+establecido. Si este característica le resulta indeseable, es posible
+modificar su comportamiento para que realice lo contrario, para ello tendrá
+que recurrir a la documentación oficial.</li>
+<li><tt class="docutils literal">d</tt> | <tt class="docutils literal">del</tt> | <tt class="docutils literal">delete</tt>: elimina, de forma permanente, un archivo
+contenedor al igual que su directorio temporal.</li>
+<li><tt class="docutils literal">o</tt> | <tt class="docutils literal">open</tt>: abre un archivo contenedor existente. Lo anterior creará un
+directorio temporal, con el mismo nombre del archivo contenedor, y copiará el
+contenido del archivo hacia este último.</li>
+<li><tt class="docutils literal">c</tt> | <tt class="docutils literal">close</tt>: cierra un contenedor. Esto eliminará el directorio
+temporal, su contenido será guardado dentro del archivo contenedor antes de
+realizar esta operación.</li>
 <li><tt class="docutils literal">l</tt> | <tt class="docutils literal">list</tt>: lista todos los directorios temporales existentes.</li>
-<li><tt class="docutils literal">h</tt> | <tt class="docutils literal">help</tt> | <tt class="docutils literal"><span class="pre">-h</span></tt> | <tt class="docutils literal"><span class="pre">--help</span></tt>: muestra un breve resumen sobre cómo utilizar <em>ctmg</em>.</li>
+<li><tt class="docutils literal">h</tt> | <tt class="docutils literal">help</tt> | <tt class="docutils literal"><span class="pre">-h</span></tt> | <tt class="docutils literal"><span class="pre">--help</span></tt>: muestra un breve resumen sobre cómo
+utilizar <em>ctmg</em>.</li>
 </ul>
 <div class="section" id="ejemplos-de-uso">
 <h3>Ejemplos de uso</h3>
@@ -150,32 +173,45 @@
 <p>Donde:</p>
 <ul class="simple">
 <li><tt class="docutils literal">foo</tt>: nombre que se le dará al nuevo archivo contenedor.</li>
-<li><tt class="docutils literal">100MiB</tt>: tamaño designado para el nuevo contenedor, 100 megabytes en este caso.</li>
+<li><tt class="docutils literal">100MiB</tt>: tamaño designado para el nuevo contenedor, 100 Mbytes en este
+caso.</li>
 </ul>
 </div>
 <div class="section" id="abrir-un-archivo-contenedor">
 <h4>Abrir un archivo contenedor</h4>
 <div class="highlight"><pre><span></span>ctmg open foo
 </pre></div>
-<p class="well"><span class="label label-info">Información:</span> Una vez abierto el archivo es posible copiar, mover, crear o manipular archivos y directorios en su interior durante el periodo de tiempo que permanezca montado dicho contenedor.</p>
+<p class="well"><span class="label label-info">Información:</span>
+Una vez abierto el archivo es posible copiar, mover, crear o manipular archivos
+y directorios en su interior durante el periodo de tiempo que permanezca montado
+dicho contenedor.</p>
 </div>
 <div class="section" id="cerrar-un-archivo-contenedor">
 <h4>Cerrar un archivo contenedor</h4>
 <div class="highlight"><pre><span></span>ctmg close foo
 </pre></div>
-<p class="well"><span class="label label-info">Información:</span> Recurra a la página oficial del proyecto para mayor información, ejecute: <span class="kbd">ctmg h</span> o bien: <span class="kbd">man ctmg</span> para aquellas distribuciones derivadas de <em>Arch Linux</em>, incluyendo a esta última.</p>
+<p class="well"><span class="label label-info">Información:</span>
+Recurra a la página oficial del proyecto para mayor información, ejecute:
+<span class="kbd">ctmg h</span> o bien: <span class="kbd">man ctmg</span> para aquellas distribuciones derivadas de
+<em>Arch Linux</em>, incluyendo a esta última.</p>
 </div>
 </div>
 </div>
 <div class="section" id="instalacion">
 <h2>Instalación</h2>
-<p>Es posible encontrar un paquete de instalación para <em>Arch Linux</em> y derivadas al recurrir al repositorio <em>AUR</em>, por ejemplo:</p>
+<p>Es posible encontrar un paquete de instalación para <em>Arch Linux</em> y derivadas al
+recurrir al repositorio <em>AUR</em>, por ejemplo:</p>
 <div class="highlight"><pre><span></span>sudo yaourt -S ctmg
 </pre></div>
-<p>Asimismo, existe un paquete para <em>Gentoo Linux</em> y derivadas, para ello basta con ejecutar el siguiente comando como <em>superusuario</em>:</p>
+<p>Asimismo, existe un paquete para <em>Gentoo Linux</em> y derivadas, para ello basta con
+ejecutar el siguiente comando como <em>superusuario</em>:</p>
 <div class="highlight"><pre><span></span>emerge ctmg
 </pre></div>
-<p>Para el resto de distribuciones GNU/Linux resulta necesario instalar las equivalencias a los siguientes paquetes: <em>cryptsetup</em>, <em>e2fsprogs</em>, <em>sudo</em>, <em>coreutils</em>; <a class="reference external" href="https://git.zx2c4.com/ctmg/snapshot/ctmg-1.2.tar.xz">descargar ctmg</a> desde el repositorio oficial, descomprimir su contenido y una vez se ha accedido al directorio en cuestión, desde la terminal ejecutar como <em>root</em>:</p>
+<p>Para el resto de distribuciones GNU/Linux resulta necesario instalar las
+equivalencias a los siguientes paquetes: <em>cryptsetup</em>, <em>e2fsprogs</em>, <em>sudo</em>,
+<em>coreutils</em>; <a class="reference external" href="https://git.zx2c4.com/ctmg/snapshot/ctmg-1.2.tar.xz">descargar ctmg</a> desde el repositorio
+oficial, descomprimir su contenido y una vez se ha accedido al directorio en
+cuestión, desde la terminal ejecutar como <em>root</em>:</p>
 <div class="highlight"><pre><span></span>make install
 </pre></div>
 </div>
@@ -183,7 +219,10 @@
 <h2>Consideraciones de uso</h2>
 <ul class="simple">
 <li>Resulta imperativo el poder acceder al sistema como superusuario.</li>
-<li><em>ctmg</em> es útil para mantener la privacidad de la información más no garantiza la autenticidad de la misma. Si alguna persona manipula de forma intencional el archivo <em>.ct</em> es muy posible que resulte comprometida la integridad y/o veracidad de los datos almacenados en el interior del contenedor.</li>
+<li><em>ctmg</em> es útil para mantener la privacidad de la información más no garantiza
+la autenticidad de la misma. Si alguna persona manipula de forma intencional
+el archivo <em>.ct</em> es muy posible que resulte comprometida la integridad y/o
+veracidad de los datos almacenados en el interior del contenedor.</li>
 <li>Actualmente solo es posible utilizar <em>ctmg</em> en sistemas <em>Linux-like</em>.</li>
 </ul>
 </div>
@@ -196,7 +235,13 @@
 <li><a class="reference external" href="http://tom.noflag.org.uk/cryptkeeper.html">Cryptkeeper</a></li>
 </ul>
 <div class="alert alert-success">
-<strong>Notas finales:</strong> El hecho de poder emplear exclusivamente utilidades estándar aunado a la rapidez de ejecución y facilidad de uso que brinda <em>ctmg</em> lo convierte en un verdadero <em>must to have</em>. Las carencias de portabilidad que <em>ctmg</em> presenta se pueden compensar cabalmente por sus propias virtudes. Para finalizar, si tuviera que citar una alternativa ideal al mismo diría que <em>tomb</em> es la opción a elegir con total seguridad.</div>
+<strong>Notas finales:</strong>
+El hecho de poder emplear exclusivamente utilidades estándar aunado a la
+rapidez de ejecución y facilidad de uso que brinda <em>ctmg</em> lo convierte en un
+verdadero <em>must to have</em>. Las carencias de portabilidad que <em>ctmg</em> presenta
+se pueden compensar cabalmente por sus propias virtudes. Para finalizar, si
+tuviera que citar una alternativa ideal al mismo diría que <em>tomb</em> es la
+opción a elegir con total seguridad.</div>
 </div>
 
             </div>
@@ -284,13 +329,13 @@
       <a href="https://icaroperseo.github.io/tag/dash.html">Dash</a>
     </li>
     <li class="list-group-item tag-3">
-      <a href="https://icaroperseo.github.io/tag/contenedores.html">Contenedores</a>
-    </li>
-    <li class="list-group-item tag-3">
       <a href="https://icaroperseo.github.io/tag/privacidad.html">Privacidad</a>
     </li>
     <li class="list-group-item tag-3">
       <a href="https://icaroperseo.github.io/tag/docset.html">Docset</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="https://icaroperseo.github.io/tag/contenedores.html">Contenedores</a>
     </li>
   </ul>
 </li>

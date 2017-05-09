@@ -185,24 +185,25 @@ como su descripción, para la creación del *docset* de ejemplo:
 
     .. class:: table-bordered table-striped
 
-        +---------------------------+---------------+---------------------------+
-        | Selector                  | Tipo de dato  | Descripción               |
-        +===========================+===============+===========================+
-        | ``div.outline-2 h2``      | ``Resource``  | Recurso o tópico del      |
-        |                           |               | documento.                |
-        +---------------------------+---------------+---------------------------+
-        | ``div.outline-3 h3``      | ``Section``   | Sección del documento.    |
-        +---------------------------+---------------+---------------------------+
-        | ``code``                  | ``Type``      | Combinaciones de teclas   |
-        |                           |               | de acceso, parámetros,    |
-        |                           |               | entre otros.              |
-        +---------------------------+---------------+---------------------------+
-        | ``div.org-src-container   | ``Command``   | Acciones a realizar desde |
-        | pre.src-sh``              |               | la línea de comandos.     |
-        +---------------------------+---------------+---------------------------+
-        | ``div.org-src-container   | ``Value``     | Valores de configuración  |
-        | pre.src-emacs-lisp``      |               | —Emacs-Lisp—.             |
-        +---------------------------+---------------+---------------------------+
+        +---------------------------+---------------+--------------------------+
+        | Selector                  | Tipo de dato  | Descripción              |
+        +===========================+===============+==========================+
+        | ``div.outline-2 h2``      | ``Resource``  | Recurso o tópico del     |
+        |                           |               | documento.               |
+        +---------------------------+---------------+--------------------------+
+        | ``div.outline-3 h3``      | ``Section``   | Sección del documento.   |
+        +---------------------------+---------------+--------------------------+
+        | ``code``                  | ``Type``      | Combinaciones de teclas  |
+        |                           |               | de acceso, parámetros,   |
+        |                           |               | entre otros.             |
+        +---------------------------+---------------+--------------------------+
+        | ``div.org-src-container   | ``Command``   | Acciones a realizar      |
+        | pre.src-sh``              |               | desde la línea de        |
+        |                           |               | comandos.                |
+        +---------------------------+---------------+--------------------------+
+        | ``div.org-src-container   | ``Value``     | Valores de configuración |
+        | pre.src-emacs-lisp``      |               | —Emacs-Lisp—.            |
+        +---------------------------+---------------+--------------------------+
 
 .. class:: well
 
